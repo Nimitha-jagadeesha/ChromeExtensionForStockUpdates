@@ -1,4 +1,4 @@
-fetch('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=JPM&interval=5min&apikey=L1YMGQ2TVW2QLHH4')
+fetch('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=JPM&interval=5min&apikey=<pass>')
     .then(data => data.json())
     .then(htmlData =>{
         const data = htmlData['Time Series (5min)'][htmlData['Meta Data']['3. Last Refreshed']];
@@ -13,7 +13,7 @@ fetch('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=JP
         lowElement.innerHTML = low;
     })
 
-    fetch('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AMZN&interval=5min&apikey=FIKW3LZYGQK97C9K')
+    fetch('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AMZN&interval=5min&apikey=<pass>')
     .then(data => data.json())
     .then(htmlData =>{
         const data = htmlData['Time Series (5min)'][htmlData['Meta Data']['3. Last Refreshed']];
